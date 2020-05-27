@@ -50,9 +50,9 @@ while inState==True:
 		inState=False
 	
 outCountyLabels=open("countyLabels.txt",'w')	
-outCountyLabels.write("%s \n" % len(countyList))
+outCountyLabels.write("%s\n" % len(countyList))
 for i in range(0,len(countyList)):
-	outCountyLabels.write("%s \t %s \n" % (countyList[i][0],countyList[i][1]))
+	outCountyLabels.write("%s\t%s\t%i\n" % (countyList[i][0],countyList[i][1],i))
 outCountyLabels.close()
 
 labelToIndex=[]
