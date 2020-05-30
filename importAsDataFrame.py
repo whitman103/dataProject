@@ -65,3 +65,4 @@ for index,data in enumerate(timeSeriesData):
 dataFrame=pd.DataFrame(data=dataDictionary)
 
 print(dataFrame['Franklin County'])
+""" Data for each county is listed in the columns, can be accessed by calls to the name of the county, as above. """
